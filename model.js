@@ -1,4 +1,4 @@
-export default class Model {
+class Model {
   constructor() {
     this.view = null;
     this.todos = JSON.parse(localStorage.getItem('todos'));
@@ -67,3 +67,4 @@ export default class Model {
     this.save();
   }
 }
+module.exports=Model;
